@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Challa Tejaswi 
+## Indian Institute Of Technology Bhubaneswar
+## Electrical Engineering
+# New Chat Frontend
+
+This project is a complete MERN-based web application integrating **ZugoCloud** API for video/audio calls, **Stream** for chat functionality, and **Firebase** for authentication and data storage.
+
+## Features
+- Real-time Video and Audio Calls (ZugoCloud)
+- Chat Functionality (Stream API)
+- Firebase Authentication
+- Emoji Picker (Emoji Mart)
+- Modern UI Components (Headless UI and Heroicons)
+
+## Project Structure
+- `src/`: Contains the React frontend code
+- `public/`: Contains static files
+- `package.json`: Lists project dependencies and scripts
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   https://github.com/ChallaTejaswi/chat_care.git
+   cd new-chat-frontend
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up Firebase:**
+
+   - Create a Firebase project and configure Firestore and Authentication.
+   - Replace Firebase config in your app with your Firebase project details.
+
+4. **Run the project:**
+
+   ```bash
+   npm start
+   ```
+
+   The app will be running on `http://localhost:3000`.
+
+## Dependencies
+
+Here are the major dependencies used in the project:
+
+- **ZugoCloud UIKit Prebuilt** (`@zegocloud/zego-uikit-prebuilt`): Provides video/audio call functionality.
+- **Stream Chat** (`stream-chat`, `stream-chat-react`): Provides real-time chat functionality.
+- **Firebase** (`firebase`, `@firebase/firestore`, `react-firebase-hooks`): Manages user authentication and Firestore database.
+- **Axios**: For making HTTP requests.
+- **React Router Dom**: For routing between pages.
+- **Emoji Mart** (`@emoji-mart/react`, `@emoji-mart/data`): For emoji picker in chat input.
+- **Headless UI** (`@headlessui/react`): Provides unstyled accessible UI components.
+- **Heroicons** (`@heroicons/react`): Icons for the UI.
+- **Sendbird Calls**: For additional call features.
+
+### Full list of dependencies:
+
+```json
+{
+  "@emoji-mart/data": "^1.2.1",
+  "@emoji-mart/react": "^1.1.1",
+  "@firebase/firestore": "^4.7.2",
+  "@headlessui/react": "^2.1.8",
+  "@heroicons/react": "^2.1.5",
+  "@testing-library/jest-dom": "^5.17.0",
+  "@testing-library/react": "^13.4.0",
+  "@testing-library/user-event": "^13.5.0",
+  "@zegocloud/zego-uikit-prebuilt": "^2.9.1",
+  "axios": "^1.7.7",
+  "emoji-mart": "^5.6.0",
+  "firebase": "^10.13.2",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-firebase-hooks": "^5.1.1",
+  "react-icons": "^5.3.0",
+  "react-router-dom": "^6.26.2",
+  "react-scripts": "5.0.1",
+  "sendbird-calls": "^1.10.19",
+  "stream-chat": "^8.40.8",
+  "stream-chat-react": "^12.0.0",
+  "web-vitals": "^2.1.4"
+}
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- **`npm start`**: Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **`npm build`**: Builds the app for production to the `build` folder.
+- **`npm test`**: Runs the tests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
